@@ -1,0 +1,105 @@
+/* Configurações Padrões */
+ul.menu,
+.menu li,
+.menu a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Submenus ocultos inicialmente */
+ul.menu ul {
+  display: none;
+  position: absolute;
+  box-shadow: 3px 3px 2px #333;
+}
+
+/* Configurações do menu */
+ul.menu {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 0;
+  width: 200px; /* Definido para tornar o menu vertical */
+}
+
+/* Configurações dos itens do menu principal */
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  line-height: 45px;
+  transition: all 0.1s linear;
+  color: #e6e2e2;
+  background: #170165;
+}
+
+/* Estilo ao passar o mouse sobre os itens do menu */
+.menu li:hover > a {
+  background: #4b1cf4;
+  color: #fff;
+}
+
+/* Estilos dos submenus de nível 1 */
+.menu li:hover > ul.submenu-1 {
+  display: block;
+  top: 0;
+  left: 200px;
+  width: 200px;
+}
+
+.submenu-1 {
+  background: #4b1cf4;
+}
+
+.submenu-1 a {
+  color: #fff;
+}
+
+.submenu-1 li:hover > a {
+  background: #666;
+}
+
+/* Estilos dos submenus de nível 2 */
+.menu li:hover > ul.submenu-2 {
+  display: block;
+  top: 0;
+  left: 200px;
+  width: 200px;
+}
+
+.submenu-2 {
+  background: #666;
+}
+
+.submenu-2 a {
+  color: #fff;
+}
+
+.submenu-2 li:hover > a {
+  background: #333;
+}
+
+/* Estilos dos submenus de nível 3 */
+.menu li:hover > ul.submenu-3 {
+  display: block;
+  top: 0;
+  left: 200px;
+  width: 200px;
+}
+
+.submenu-3 {
+  background: #333;
+}
+
+.submenu-3 a {
+  color: #fff;
+}
+
+.submenu-3 li:hover > a {
+  background: #000;
+}
